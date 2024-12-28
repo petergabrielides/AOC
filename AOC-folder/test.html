@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+      const a = [1, 2, 3];
+      const b = [4, 3, 5, 1, 2, 3, 8];
+
+      const c = b.some((_, i) => {
+        a.forEach((val, j) => val === b[i + j])
+      })
+
+      console.log(c);
+    </script>
+  </body>
+</html>
